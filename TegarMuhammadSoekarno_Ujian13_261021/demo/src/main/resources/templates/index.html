@@ -138,14 +138,14 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="storyText">
             <h4>Profile</h4>
-            <h6>Complete name: </h6>
-            <p><span th:text="${profile.full_name}"/></p>
+            <h6>Complete name:</h6>
+            <p>Megan Cooper</p>
             <h6>Phone number:</h6>
-            <p><span th:text="${profile.phone_number}"/></p>
+            <p>+0123 456 789</p>
             <h6>Website:</h6>
-            <p><span th:text="${profile.website}"/></p>
+            <p>www.megandesign.com</p>
             <h6>E-mail:</h6>
-            <p><span th:text="${profile.email}"/></p>
+            <p>adress@domain.com</p>
             </div>
             </div>
 
@@ -157,31 +157,31 @@
             <div class="col-md-4 col-sm-5 col-xs-12">
             <div class="storyText">
             <h4>Skills</h4>
-            <h6><span th:text="${skill[0].skill_name}"/></h6>
+            <h6>Web design</h6>
             <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="${skill[0].skill_value}" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-            <span th:text="${skill[0].skill_value}" />
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+            80%
             </div>
             </div>
 
-            <h6><span th:text="${skill[1].skill_name}"/></h6>
+            <h6>Logo design</h6>
             <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="${skill[1].skill_value}" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-            <span th:text="${skill[1].skill_value}" />
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+            70%
             </div>
             </div>
 
-            <h6><span th:text="${skill[2].skill_name}"/></h6>
+            <h6>Photography</h6>
             <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="${skill[2].skill_value}" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
-            <span th:text="${skill[2].skill_value}" />
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+            85%
             </div>
             </div>
 
-            <h6><span th:text="${skill[3].skill_name}"/></h6>
+            <h6>Web development</h6>
             <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="${skill[3].skill_value}" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
-            <span th:text="${skill[3].skill_value}" />
+            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+            65%
             </div>
             </div>
 
@@ -228,19 +228,39 @@
 
                     <ul class="resumeList">
                         <li class="resTitle"><h4>Education</h4></li>
-                    	<div th:each="itemResume : ${resume}">
-	                    	<li>
-	                            <div class="resumeIcon">
-	                                <div class="icon icon-basic-case"></div>
-	                            </div>
-	                            <div class="resumeContent">
-	                                <h5 th:text="${itemResume.judul}"></h5>
-	                                <span th:text="${itemResume.tahun}"/>
-	                                <p class="plineheight">
-	                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore adipisci excepturi dolorum.</p>
-	                            </div>
-	                        </li>
-                    	</div>
+                        <li>
+                            <div class="resumeIcon">
+                                <div class="icon icon-basic-book"></div>
+                            </div>
+                            <div class="resumeContent">
+                                <h5>Master of Informathics</h5>
+                                <span>2014-2015</span>
+                                <p class="plineheight">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore adipisci excepturi dolorum.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resumeIcon">
+                                <div class="icon icon-basic-book"></div>
+                            </div>
+                            <div class="resumeContent">
+                                <h5>College of Informathics</h5>
+                                <span>2012-2014</span>
+                                <p class="plineheight">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore adipisci excepturi dolorum.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resumeIcon">
+                                <div class="icon icon-basic-book"></div>
+                            </div>
+                            <div class="resumeContent">
+                                <h5>Computer Science HS</h5>
+                                <span>2008-2012</span>
+                                <p class="plineheight">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore adipisci excepturi dolorum.</p>
+                            </div>
+                        </li>
                     </ul>
 
                 </div>
@@ -250,19 +270,39 @@
 
                     <ul class="resumeList">
                         <li class="resTitle"><h4>Employment</h4></li>
-                    	<div th:each="itemEmployment : ${resume2}">
-	                    	<li>
-	                            <div class="resumeIcon">
-	                                <div class="icon icon-basic-case"></div>
-	                            </div>
-	                            <div class="resumeContent">
-	                                <h5 th:text="${itemEmployment.judul}"></h5>
-	                                <span th:text="${itemEmployment.tahun}"/>
-	                                <p class="plineheight">
-	                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore adipisci excepturi dolorum.</p>
-	                            </div>
-	                        </li>
-                    	</div>
+                        <li>
+                            <div class="resumeIcon">
+                                <div class="icon icon-basic-case"></div>
+                            </div>
+                            <div class="resumeContent">
+                                <h5>Exclusive author</h5>
+                                <span>2013-2015+</span>
+                                <p class="plineheight">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore adipisci excepturi dolorum.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resumeIcon">
+                                <div class="icon icon-basic-case"></div>
+                            </div>
+                            <div class="resumeContent">
+                                <h5>Front-end developer</h5>
+                                <span>2010-2013</span>
+                                <p class="plineheight">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore adipisci excepturi dolorum.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resumeIcon">
+                                <div class="icon icon-basic-case"></div>
+                            </div>
+                            <div class="resumeContent">
+                                <h5>Freelancer</h5>
+                                <span>2008-2010</span>
+                                <p class="plineheight">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore adipisci excepturi dolorum.</p>
+                            </div>
+                        </li>
                     </ul>
 
                 </div>
